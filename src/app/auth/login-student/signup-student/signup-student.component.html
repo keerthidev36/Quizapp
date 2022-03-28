@@ -1,0 +1,41 @@
+<p>signup-student works!</p>
+<!-- <p>login works!</p> -->
+<div class="container register">
+    <div class="row">
+             <div class="tab-content" id="myTabContent"> 
+                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading" data-toggle="tab">  Student SignUp  </h3>
+                    <div class="row register-form">
+                        <div class="col-md-12">
+                            <form method="post" class="sign-up-form">
+                                <div class="form-group">
+                                    <input type="text" name="stname" class="form-control" placeholder="Full Name *" value="" pattern="[a-zA-Z]+$" autocomplete="off" spellcheck="false" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="stphonenumber" class="form-control" placeholder="Mobile Number *"  pattern="^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$" autocomplete ="off"  spellcheck="false" maxlength="10" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="stemail" class="form-control" placeholder=" Email *" value=""  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off" spellcheck="false" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="stpassword" class="form-control" placeholder="Password *" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  autocomplete="off" spellcheck="false" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="stcmpassword" class="form-control" placeholder="Confirm Password *" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  autocomplete="off" spellcheck="false" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="LGform1" class="btnContactSubmit" value="REGISTER" />
+                                    <span><b>Already have an Account?</b></span>
+                                    <a [routerLink]="['/login-student']" class="btnForgetPwd" id="st_login"  value="Login"></a> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+       
+    </div>
+</div>
+
+
