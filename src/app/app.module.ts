@@ -15,6 +15,7 @@ import { LoginStudentComponent } from './auth/login-student/login-student/login-
 import { SignupStudentComponent } from './auth/login-student/signup-student/signup-student.component';
 import { LoginTeacherComponent } from './auth/login-teacher/login-teacher/login-teacher.component';
 import { SignupTeacherComponent } from './auth/login-teacher/signup-teacher/signup-teacher.component';
+import { ChangeBgDirective } from './change-bg.directive';
 
 
 
@@ -32,6 +33,7 @@ import { SignupTeacherComponent } from './auth/login-teacher/signup-teacher/sign
     SignupStudentComponent,
     LoginTeacherComponent,
     SignupTeacherComponent,
+    ChangeBgDirective,
   ],
   imports: [
     BrowserModule,
